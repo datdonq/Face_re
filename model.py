@@ -12,5 +12,5 @@ def model(features,labels):
     grid.fit(X_train, y_train)
     y_pred=grid.predict(X_test)
     print(accuracy_score(y_test,y_pred))
-    joblib.dump(grid, 'model4.joblib')
+    joblib.dump(grid, 'model.joblib')
     return grid
